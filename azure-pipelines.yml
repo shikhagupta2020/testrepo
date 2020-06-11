@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world!
+
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
@@ -26,6 +26,4 @@ steps:
     deploymentName: 'myFirstDeployemnt'
   displayName: 'Run a one-line script'
 
-- script: |
-   
-  displayName: 'Run a multi-line script'
+
