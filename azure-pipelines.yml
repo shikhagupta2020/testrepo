@@ -20,7 +20,7 @@ steps:
     resourceGroupName: 'AzureRmPipeline-rg'
     location: 'South India'
     templateLocation: 'Linked artifact'
-    csmFile: 'CreateWebApp/Maintemplate.json'
+    csmFile: 'CreateWebApp/LinkedTemplate.json'
     overrideParameters: '-projectName myFirstTemplateDemo -linkedTemplateUri -https://raw.githubusercontent.com/shikhagupta2020/testrepo/master/CreateWebApp/LinkedTemplate.json'
     deploymentMode: 'Incremental'
     deploymentName: 'myFirstDeployemnt'
